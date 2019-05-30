@@ -1,0 +1,68 @@
+Users:
+[
+    {username: 'user1', email: 'email1@host.com', password: 'pass1'},
+    {username: 'user2', email: 'email2@host.com', password: 'pass2'},
+    {username: 'user3', email: 'email3@host.com', password: 'pass3'},
+    {username: 'user4', email: 'email4@host.com', password: 'pass4'}
+]
+Creators:
+[
+    {name: 'Channel1', subscribers: 2300000, user: 'user1'},
+    {name: 'Channel2', subscribers: 1230000, user: 'user1'},
+    {name: 'Channel3', subscribers: 853000, user: 'user1'}
+]
+Videos:
+[
+    {
+        title: 'Title 1',
+        description: 'desc 1',
+        creator: 'Channel1',
+        comments: ['wow how cool', 'amazing video', 'very interesting'],
+        tags: ['funny', 'prank', 'adventure'],
+        likes: 250000,
+        dislikes: 1000,
+        views: 102310,
+        watch_time: 10.42,
+        shares: 10000,
+        date: new Date("2019-05-06T16:00:00Z")
+    },
+    {
+        title: 'Title 2',
+        description: 'desc 2',
+        creator: 'Channel1',
+        comments: ['wow how cool', 'amazing video', 'very interesting'],
+        tags: ['tutorial', '3D', 'blender'],
+        likes: 52345,
+        dislikes: 532,
+        views: 3162360,
+        watch_time: 13.86,
+        shares: 7236,
+        date: new Date("2019-05-02T16:00:00Z")
+    },
+    {
+        title: 'Title 3',
+        description: 'desc 3',
+        creator: 'Channel2',
+        comments: ['wow how cool', 'amazing video', 'very interesting'],
+        tags: ['programming', 'code', 'tutorial'],
+        likes: 1234,
+        dislikes: 34134,
+        views: 55342,
+        watch_time: 6.1,
+        shares: 634,
+        date: new Date("2019-04-29T16:00:00Z")
+    },
+    {
+        title: 'Title 4',
+        description: 'desc 4',
+        creator: 'Channel3',
+        comments: ['wow how cool', 'amazing video', 'very interesting'],
+        tags: ['cooking', 'ingredients', 'how to', 'tutorial', 'rice'],
+        likes: 23400,
+        dislikes: 2000,
+        views: 62345,
+        watch_time: 12.22,
+        shares: 1234,
+        date: new Date()
+    }
+]

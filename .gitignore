@@ -1,0 +1,5 @@
+resources
+api/src/node_modules
+scripts/node_modules
+storage/node_modules
+web/app/node_modules

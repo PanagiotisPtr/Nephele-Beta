@@ -1,0 +1,25 @@
+User:
+    username : String
+    email : String
+    password : String
+    
+Creator:
+    name : String
+    subscribers : Number
+
+Video:
+    title : String
+    description : String
+    creator : Object ID
+    comments : Array
+    likes : Number
+    dislikes : Number
+    views : Number
+    watch_time : Number - double (average watch time)
+    shares : Number
+    date : Date
+    tags : Array
+
+Note:
+    Thumbnail can be derived from file structure + Object ID
+    Source can be derived from file structure + Object ID

@@ -1,0 +1,44 @@
+version: '3.6'
+
+services:
+  app:
+    build: ./web
+    restart: always
+    ports:
+      - 3000:3000
+    volumes:
+      - video_storage:/usr/src/app/src/data/videos
+      - user_storage:/usr/src/app/src/data/users
+      - creator_storage:/usr/src/app/src/data/creators
+    depends_on:
+      - api
+      - storage
+  api:
+    build: ./api
+    restart: always
+    ports:
+      - 4000:4000
+    depends_on:
+      - db
+  storage:
+    build: ./storage
+    restart: always
+    ports:
+      - 5000:5000
+    volumes:
+      - video_storage:/data/videos
+      - user_storage:/data/users
+      - creator_storage:/data/creators
+  db:
+    image: mongo
+    volumes:
+      - db_storage:/data/db
+      - ./db/init:/docker-entrypoint-initdb.d
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: root
+      MONGO_INITDB_ROOT_PASSWORD: example
+volumes:
+  db_storage:
+  video_storage:
+  user_storage:
+  creator_storage:

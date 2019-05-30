@@ -1,0 +1,31 @@
+.invisible-scroll::-webkit-scrollbar { width: 0 !important }
+
+.invisible-scroll {
+    scrollbar-width: none;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    -ms-overflow-style: none;
+}
+
+.separator {
+    height: 0.1vh;
+    background: rgb(228, 228, 228);
+}
+
+.no-select:focus {
+    outline: none !important;
+}
+
+.clickable {
+    cursor: pointer;
+}
+
+.text-link {
+    color: inherit;
+    text-decoration: inherit;
+}
+
+.image-link {
+    width: inherit;
+    height: inherit;
+}

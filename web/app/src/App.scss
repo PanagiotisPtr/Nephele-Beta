@@ -1,0 +1,22 @@
+.row-container {
+    display: flex;
+    flex-direction: row;
+
+    .item {
+        flex: 1;
+    }
+}
+
+.col-container {
+    display: flex;
+    flex-direction: column;
+
+    .item {
+        flex: 1;
+    }
+}
+
+.app {
+    @extend .row-container;
+    height: 100vh;
+}
